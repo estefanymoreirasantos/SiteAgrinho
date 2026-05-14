@@ -1,1 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - O Futuro do Agro com IA | Projeto Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Rastro do Mouse -->
+    <div class="mouse-trail" id="mouseTrail"></div>
+    
+    <!-- Partículas de fundo -->
+    <div class="particles" id="particles"></div>
 
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>AgroTech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li><a href="#ia" class="nav-link">IA no Agro</a></li>
+                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-robot"></i>
+                <span>Projeto Agrinho 2024</span>
+            </div>
+            <h1 class="hero-title">
+                O Agro Encontra a
+                <span class="gradient-text">Tecnologia</span>
+            </h1>
+            <p class="hero-subtitle">
+                Descubra como a Inteligência Artificial e as novas tecnologias estão revolucionando o campo, 
+                aumentando a produtividade e construindo um futuro sustentável para todos.
+            </p>
+            <div class="hero-buttons">
+                <a href="#sobre" class="btn btn-primary">
+                    <i class="fas fa-chevron-right"></i>
+                    Explorar Mais
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <i class="fas fa-comment-dots"></i>
+                    Fale Conosco
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95">0</span>
+                    <span class="stat-label">% Precisão IA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="40">0</span>
+                    <span class="stat-label">% Mais Produtividade</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="70">0</span>
+                    <span class="stat-label">% Menos Desperdício</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card card-1">
+                <i class="fas fa-tractor"></i>
+                <span>Máquinas Autônomas</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-drone"></i>
+                <span>Drones Inteligentes</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-microchip"></i>
+                <span>Sensores IoT</span>
+            </div>
+            <div class="hero-circle"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="section-header">
+            <span class="section-badge">Sobre o Projeto</span>
+            <h2 class="section-title">Unindo <span class="gradient-text">Campo e Cidade</span></h2>
+            <p class="section-description">
+                O Projeto Agrinho acredita no poder transformador da tecnologia no campo. 
+                Conheça como estamos conectando inovação e tradição.
+            </p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Inteligência Artificial</h3>
+                <p>Algoritmos que aprendem com os dados do campo para tomar decisões mais precisas e eficientes.</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <h3>Agricultura de Precisão</h3>
+                <p>Uso de dados climáticos, sensores e imagens de satélite para otimizar cada metro quadrado da plantação.</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Sustentabilidade</h3>
+                <p>Tecnologia a serviço do meio ambiente, reduzindo o uso de água, defensivos e recursos naturais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias Section -->
+    <section id="tecnologias" class="technologies">
+        <div class="section-header">
+            <span class="section-badge">Inovação</span>
+            <h2 class="section-title">Tecnologias que <span class="gradient-text">Transformam</span></h2>
+            <p class="section-description">
+                Ferramentas de ponta que estão mudando a forma como produzimos alimentos.
+            </p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-image">
+                    <i class="fas fa-drone"></i>
+                </div>
+                <h3>Drones Mapeadores</h3>
+                <p>Capturam imagens em alta resolução para identificar pragas, doenças e deficiências nutricionais nas plantas.</p>
+                <ul class="tech-features">
+                    <li><i class="fas fa-check"></i> Mapeamento 3D</li>
+                    <li><i class="fas fa-check"></i> Identificação precoce de problemas</li>
+                    <li><i class="fas fa-check"></i> Pulverização precisa</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <div class="tech-image">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3>Sensores Inteligentes</h3>
+                <p>Monitoram em tempo real a umidade do solo, temperatura, luminosidade e outros fatores críticos.</p>
+                <ul class="tech-features">
+                    <li><i class="fas fa-check"></i> Dados em tempo real</li>
+                    <li><i class="fas fa-check"></i> Irrigação automatizada</li>
+                    <li><i class="fas fa-check"></i> Economia de água</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <div class="tech-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Robôs Agrícolas</h3>
+                <p>Máquinas autônomas que plantam, colhem e monitoram a lavoura 24 horas por dia.</p>
+                <ul class="tech-features">
+                    <li><i class="fas fa-check"></i> Operação 24/7</li>
+                    <li><i class="fas fa-check"></i> Colheita seletiva</li>
+                    <li><i class="fas fa-check"></i> Redução de custos</li>
+                </ul>
+            </div>
+            <div class="tech-card">
+                <div class="tech-image">
+                    <i class="fas fa-satellite"></i>
+                </div>
+                <h3>Satélites e GPS</h3>
+                <p>Imagens orbitais e geolocalização para gestão precisa de grandes áreas cultivadas.</p>
+                <ul class="tech-features">
+                    <li><i class="fas fa-check"></i> NDVI e índices vegetativos</li>
+                    <li><i class="fas fa-check"></i> Planejamento de plantio</li>
+                    <li><i class="fas fa-check"></i> Gestão territorial</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA Section -->
+    <section id="ia" class="ai-section">
+        <div class="section-header">
+            <span class="section-badge">Inteligência Artificial</span>
+            <h2 class="section-title">IA: O <span class="gradient-text">Cérebro do Campo</span></h2>
+            <p class="section-description">
+                Como os algoritmos inteligentes estão revolucionando cada etapa da produção agrícola.
+            </p>
+        </div>
+        <div class="ai-content">
+            <div class="ai-features">
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="ai-feature-text">
+                        <h3>Previsão de Safras</h3>
+                        <p>Modelos de machine learning analisam dados históricos e climáticos para prever com alta precisão o rendimento das colheitas.</p>
+                    </div>
+                </div>
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="ai-feature-text">
+                        <h3>Detecção de Pragas</h3>
+                        <p>Visão computacional identifica automaticamente pragas e doenças nas plantas antes que se espalhem.</p>
+                    </div>
+                </div>
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="ai-feature-text">
+                        <h3>Irrigação Inteligente</h3>
+                        <p>Sistemas que calculam exatamente a quantidade de água necessária, reduzindo o desperdício em até 60%.</p>
+                    </div>
+                </div>
+                <div class="ai-feature">
+                    <div class="ai-feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="ai-feature-text">
+                        <h3>Previsão de Mercado</h3>
+                        <p>Algoritmos que analisam tendências de mercado para orientar o produtor sobre o melhor momento de vender.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-visual">
+                <div class="ai-circle">
+                    <div class="ai-circle-inner">
+                        <i class="fas fa-brain"></i>
+                        <span>IA</span>
+                    </div>
+                </div>
+                <div class="ai-connections">
+                    <div class="connection connection-1"></div>
+                    <div class="connection connection-2"></div>
+                    <div class="connection connection-3"></div>
+                    <div class="connection connection-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="section-header">
+            <span class="section-badge">Vantagens</span>
+            <h2 class="section-title">Por que <span class="gradient-text">Investir em Tecnologia</span></h2>
+            <p class="section-description">
+                Os resultados comprovados da união entre agro e inovação tecnológica.
+            </p>
+        </div>
+        <div class="benefits-container">
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-arrow-up"></i>
+                    <div>
+                        <h3>Aumento de Produtividade</h3>
+                        <p>Até 40% mais produção usando tecnologias de precisão</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-arrow-down"></i>
+                    <div>
+                        <h3>Redução de Custos</h3>
+                        <p>Menos desperdício de insumos e recursos naturais</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h3>Menor Risco</h3>
+                        <p>Decisões baseadas em dados reduzem perdas por eventos climáticos</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <h3>Sustentabilidade</h3>
+                        <p>Produção mais limpa e amiga do meio ambiente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-visual">
+                <div class="chart-container">
+                    <div class="chart-bar" style="height: 85%">
+                        <span>+40% Produtividade</span>
+                    </div>
+                    <div class="chart-bar" style="height: 70%">
+                        <span>-30% Custos</span>
+                    </div>
+                    <div class="chart-bar" style="height: 90%">
+                        <span>+95% Precisão</span>
+                    </div>
+                    <div class="chart-bar" style="height: 65%">
+                        <span>-60% Desperdício</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="projects">
+        <div class="section-header">
+            <span class="section-badge">Projetos</span>
+            <h2 class="section-title">Cases de <span class="gradient-text">Sucesso</span></h2>
+            <p class="section-description">
+                Exemplos reais de como a tecnologia está transformando propriedades rurais.
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Fazenda Inteligente</span>
+                    <h3>Fazenda 4.0 em Cascavel</h3>
+                    <p>Implementação de sistema completo de automação e IA que aumentou a produtividade em 45%.</p>
+                    <a href="#" class="project-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Sustentabilidade</span>
+                    <h3>Agricultura Regenerativa Digital</h3>
+                    <p>Uso de sensores e IA para regenerar solos degradados e aumentar a biodiversidade.</p>
+                    <a href="#" class="project-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-drone"></i>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Drones</span>
+                    <h3>Monitoramento Aéreo no PR</h3>
+                    <p>Frota de drones autônomos que monitoram 10.000 hectares diariamente com precisão de 98%.</p>
+                    <a href="#" class="project-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="section-header">
+            <span class="section-badge">Contato</span>
+            <h2 class="section-title">Vamos <span class="gradient-text">Conversar</span></h2>
+            <p class="section-description">
+                Tem alguma dúvida ou quer saber mais sobre como a tecnologia pode ajudar na sua produção?
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>estefany@agrotech.com.br</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Localização</h3>
+                        <p>Paraná, Brasil</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>Projeto</h3>
+                        <p>Agrinho 2024</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Seu email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>AgroTech</span>
+                </div>
+                <p>Conectando o campo ao futuro com tecnologia e inovação.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#ia">IA no Agro</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AgroTech - Projeto Agrinho. Desenvolvido com 💜 por Estefany. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
